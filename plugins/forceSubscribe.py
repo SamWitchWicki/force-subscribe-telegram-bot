@@ -52,8 +52,9 @@ def _check_member(client, message):
           sent_message = message.reply_text(
               "{}, you are **not subscribed** to my [channel](https://t.me/{}) yet. Please [join](https://t.me/{}) and **press the button below** to unmute yourself.".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
+              url = "https://t.me/{}"
               reply_markup=InlineKeyboardMarkup(
-                  [[InlineKeyboardButton("Join Channel",pass url="https://t.me/{}")],
+                  [[InlineKeyboardButton("Join Channel",pass_url=url)],
                   [InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")]]
               )
           )

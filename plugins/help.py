@@ -45,8 +45,11 @@ def map(pos):
         url = "https://t.me/MeGBotsChat"
         button = [
              InlineKeyboardButton(text = 'Project Channel', url="https://t.me/MeGBots"),
-             InlineKeyboardButton(text = 'Support Chat', url=url)],
-            [InlineKeyboardButton(text = '⥷', callback_data = f"help+{pos-1}")]
+             InlineKeyboardButton(text = 'Support Chat', url=url)
+            ], 
+            [
+             InlineKeyboardButton(text = '⥷', callback_data = f"help+{pos-1}")
+            ]
         ]
     else:
         button = [

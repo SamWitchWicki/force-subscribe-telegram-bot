@@ -24,7 +24,7 @@ class Messages():
       HELP_MSG = [
         ".",
 
-        "<b><u>Force Subscribe</u>\nForce group members to join a specific channel before sending messages in the group.\nI will mute members if they not joined your channel and tell them to join the channel and unmute themself by pressing a button.</b>",
+        "<b><u>Force Subscribe</u>\nForce group members to join a specific channel before sending messages in the group.\nI will mute members if they not joined your channel and tell them to join the channel and unmute themself by pressing a button.</b>\n\n<b><u>⚠️Note</u> :- I Can Force Members To Join Only A Public Channel not Pvt Channel.</b>",
         
         "<b><u>Setup</u>\nFirst of all add me in the group as admin with ban users permission and in the channel as admin.\nNote: Only creator of the group can setup me and i will leave the chat if i am not an admin in the chat.</b>",
         
@@ -33,4 +33,4 @@ class Messages():
         "<b>Developed by @StarkXT8</b>"
       ]
 
-      START_MSG = "<b>Hey <a href='(tg://user?id={})'>[{}]</a>\nI can force members to join a specific channel before writing messages in the group.\nLearn more at /help</b>"
+      START_MSG = "**Hey [{}](tg://user?id={})**\n\n**I can force members to join a specific channel before writing messages in the group.\nLearn more at /help**"

@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 def _start(client, message):
     client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
-        parse_mode="markdown",
+        parse_mode="html",
         reply_to_message_id=message.message_id
         )
 
@@ -18,7 +18,7 @@ def _start(client, message):
 def _help(client, message):
     client.send_message(chat_id = message.chat.id,
         text = tr.HELP_MSG[1],
-        parse_mode="markdown",
+        parse_mode="html",
         disable_notification = True,
         reply_markup = InlineKeyboardMarkup(map(1)),
         reply_to_message_id = message.message_id

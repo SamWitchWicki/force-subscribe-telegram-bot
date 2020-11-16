@@ -44,6 +44,7 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = "https://t.me/MeGBotsChat"
         button = [
+            [
              InlineKeyboardButton(text = 'Project Channel', url="https://t.me/MeGBots"),
              InlineKeyboardButton(text = 'Support Chat', url=url)
             ], 
